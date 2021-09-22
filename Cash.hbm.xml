@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 22 Sep, 2021 1:45:55 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <joined-subclass name="in.co.rays.inheri.Cash" extends="in.co.rays.inheri.Payment" table="CASH" >
+        <key>
+            <column name="ID" />
+        </key>
+        <property name="id" type="int" access="field">
+            <column name="ID" />
+        </property>
+    </joined-subclass>
+</hibernate-mapping>
